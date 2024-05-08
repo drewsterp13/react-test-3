@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import Modal from "@mui/material/Modal";
 import { server_calls } from "../api/server"
-import Table from "@mui/material/Table"
 import DisplayAddInfo from "./DisplayAddInfo"
 import { DataGrid, GridColDef } from '@mui/x-data-grid';
 import { useGetData } from "../custom-hooks/FetchData"
@@ -46,7 +45,7 @@ function FormModal( prop: mySelectionModel ) {
     )
 }
 
-export default function DataTable( prop: displayFormProp ) {
+export default function DataTable() {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
