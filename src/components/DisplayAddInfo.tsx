@@ -1,7 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import Modal from "@mui/material/Modal";
-import { useSubmit } from "react-router-dom"
 import { server_calls } from "../api/server"
 import { useDispatch, useStore } from "react-redux"
 import { chooseMake, chooseModel, chooseYear, chooseColor, choosePrice } from "../redux/slices/RootSlice"
@@ -18,7 +17,7 @@ const DisplayAddInfo = ( props:AddInfoProps ) => {
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
 
-    const onSubmit = (data: any, event: any) => {
+    const onSubmit = (data: any) => {
         console.log(`ID: ${typeof props.id}`);
         console.log(props.id)
         console.log(data)
