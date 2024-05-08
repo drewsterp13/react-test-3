@@ -9,7 +9,7 @@ interface RouteType {
     protected: boolean
 }
 
-const routes: any = [
+const routes: RouteType[] = [
     {
         path: "",
         component: Home,
