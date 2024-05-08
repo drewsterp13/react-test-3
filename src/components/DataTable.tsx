@@ -5,10 +5,6 @@ import DisplayAddInfo from "./DisplayAddInfo"
 import { DataGrid, GridColDef } from '@mui/x-data-grid';
 import { useGetData } from "../custom-hooks/FetchData"
 
-interface displayFormProp {
-    displayForm: boolean;
-  }
-
 interface mySelectionModel {
     selmodel: string[];
 }
